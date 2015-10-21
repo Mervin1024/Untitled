@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE496B631BCE45E300D0055B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE496B621BCE45E300D0055B /* main.m */; };
+		EE496B661BCE45E300D0055B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE496B651BCE45E300D0055B /* AppDelegate.m */; };
+		EE496B691BCE45E300D0055B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE496B681BCE45E300D0055B /* ViewController.m */; };
+		EE496B6C1BCE45E300D0055B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE496B6A1BCE45E300D0055B /* Main.storyboard */; };
+		EE496B6E1BCE45E300D0055B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE496B6D1BCE45E300D0055B /* Assets.xcassets */; };
+		EE496B711BCE45E300D0055B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE496B6F1BCE45E300D0055B /* LaunchScreen.storyboard */; };
+		EE496B7C1BCE45E300D0055B /* InfiniteScrollviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE496B7B1BCE45E300D0055B /* InfiniteScrollviewTests.m */; };
+		EE496B871BCE45E300D0055B /* InfiniteScrollviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE496B861BCE45E300D0055B /* InfiniteScrollviewUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE496B781BCE45E300D0055B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE496B561BCE45E200D0055B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE496B5D1BCE45E300D0055B;
+			remoteInfo = InfiniteScrollview;
+		};
+		EE496B831BCE45E300D0055B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE496B561BCE45E200D0055B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE496B5D1BCE45E300D0055B;
+			remoteInfo = InfiniteScrollview;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE496B5E1BCE45E300D0055B /* InfiniteScrollview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteScrollview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE496B621BCE45E300D0055B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE496B641BCE45E300D0055B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE496B651BCE45E300D0055B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE496B671BCE45E300D0055B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EE496B681BCE45E300D0055B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EE496B6B1BCE45E300D0055B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE496B6D1BCE45E300D0055B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE496B701BCE45E300D0055B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE496B721BCE45E300D0055B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE496B771BCE45E300D0055B /* InfiniteScrollviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteScrollviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE496B7B1BCE45E300D0055B /* InfiniteScrollviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollviewTests.m; sourceTree = "<group>"; };
+		EE496B7D1BCE45E300D0055B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE496B821BCE45E300D0055B /* InfiniteScrollviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteScrollviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE496B861BCE45E300D0055B /* InfiniteScrollviewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfiniteScrollviewUITests.m; sourceTree = "<group>"; };
+		EE496B881BCE45E300D0055B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE496B5B1BCE45E300D0055B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE496B741BCE45E300D0055B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE496B7F1BCE45E300D0055B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE496B551BCE45E200D0055B = {
+			isa = PBXGroup;
+			children = (
+				EE496B601BCE45E300D0055B /* InfiniteScrollview */,
+				EE496B7A1BCE45E300D0055B /* InfiniteScrollviewTests */,
+				EE496B851BCE45E300D0055B /* InfiniteScrollviewUITests */,
+				EE496B5F1BCE45E300D0055B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE496B5F1BCE45E300D0055B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE496B5E1BCE45E300D0055B /* InfiniteScrollview.app */,
+				EE496B771BCE45E300D0055B /* InfiniteScrollviewTests.xctest */,
+				EE496B821BCE45E300D0055B /* InfiniteScrollviewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE496B601BCE45E300D0055B /* InfiniteScrollview */ = {
+			isa = PBXGroup;
+			children = (
+				EE496B641BCE45E300D0055B /* AppDelegate.h */,
+				EE496B651BCE45E300D0055B /* AppDelegate.m */,
+				EE496B671BCE45E300D0055B /* ViewController.h */,
+				EE496B681BCE45E300D0055B /* ViewController.m */,
+				EE496B6A1BCE45E300D0055B /* Main.storyboard */,
+				EE496B6D1BCE45E300D0055B /* Assets.xcassets */,
+				EE496B6F1BCE45E300D0055B /* LaunchScreen.storyboard */,
+				EE496B721BCE45E300D0055B /* Info.plist */,
+				EE496B611BCE45E300D0055B /* Supporting Files */,
+			);
+			path = InfiniteScrollview;
+			sourceTree = "<group>";
+		};
+		EE496B611BCE45E300D0055B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE496B621BCE45E300D0055B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE496B7A1BCE45E300D0055B /* InfiniteScrollviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE496B7B1BCE45E300D0055B /* InfiniteScrollviewTests.m */,
+				EE496B7D1BCE45E300D0055B /* Info.plist */,
+			);
+			path = InfiniteScrollviewTests;
+			sourceTree = "<group>";
+		};
+		EE496B851BCE45E300D0055B /* InfiniteScrollviewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE496B861BCE45E300D0055B /* InfiniteScrollviewUITests.m */,
+				EE496B881BCE45E300D0055B /* Info.plist */,
+			);
+			path = InfiniteScrollviewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE496B5D1BCE45E300D0055B /* InfiniteScrollview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE496B8B1BCE45E300D0055B /* Build configuration list for PBXNativeTarget "InfiniteScrollview" */;
+			buildPhases = (
+				EE496B5A1BCE45E300D0055B /* Sources */,
+				EE496B5B1BCE45E300D0055B /* Frameworks */,
+				EE496B5C1BCE45E300D0055B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InfiniteScrollview;
+			productName = InfiniteScrollview;
+			productReference = EE496B5E1BCE45E300D0055B /* InfiniteScrollview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE496B761BCE45E300D0055B /* InfiniteScrollviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE496B8E1BCE45E300D0055B /* Build configuration list for PBXNativeTarget "InfiniteScrollviewTests" */;
+			buildPhases = (
+				EE496B731BCE45E300D0055B /* Sources */,
+				EE496B741BCE45E300D0055B /* Frameworks */,
+				EE496B751BCE45E300D0055B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE496B791BCE45E300D0055B /* PBXTargetDependency */,
+			);
+			name = InfiniteScrollviewTests;
+			productName = InfiniteScrollviewTests;
+			productReference = EE496B771BCE45E300D0055B /* InfiniteScrollviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE496B811BCE45E300D0055B /* InfiniteScrollviewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE496B911BCE45E300D0055B /* Build configuration list for PBXNativeTarget "InfiniteScrollviewUITests" */;
+			buildPhases = (
+				EE496B7E1BCE45E300D0055B /* Sources */,
+				EE496B7F1BCE45E300D0055B /* Frameworks */,
+				EE496B801BCE45E300D0055B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE496B841BCE45E300D0055B /* PBXTargetDependency */,
+			);
+			name = InfiniteScrollviewUITests;
+			productName = InfiniteScrollviewUITests;
+			productReference = EE496B821BCE45E300D0055B /* InfiniteScrollviewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE496B561BCE45E200D0055B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = sh219;
+				TargetAttributes = {
+					EE496B5D1BCE45E300D0055B = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					EE496B761BCE45E300D0055B = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EE496B5D1BCE45E300D0055B;
+					};
+					EE496B811BCE45E300D0055B = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EE496B5D1BCE45E300D0055B;
+					};
+				};
+			};
+			buildConfigurationList = EE496B591BCE45E200D0055B /* Build configuration list for PBXProject "InfiniteScrollview" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE496B551BCE45E200D0055B;
+			productRefGroup = EE496B5F1BCE45E300D0055B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE496B5D1BCE45E300D0055B /* InfiniteScrollview */,
+				EE496B761BCE45E300D0055B /* InfiniteScrollviewTests */,
+				EE496B811BCE45E300D0055B /* InfiniteScrollviewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE496B5C1BCE45E300D0055B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE496B711BCE45E300D0055B /* LaunchScreen.storyboard in Resources */,
+				EE496B6E1BCE45E300D0055B /* Assets.xcassets in Resources */,
+				EE496B6C1BCE45E300D0055B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE496B751BCE45E300D0055B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE496B801BCE45E300D0055B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE496B5A1BCE45E300D0055B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE496B691BCE45E300D0055B /* ViewController.m in Sources */,
+				EE496B661BCE45E300D0055B /* AppDelegate.m in Sources */,
+				EE496B631BCE45E300D0055B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE496B731BCE45E300D0055B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE496B7C1BCE45E300D0055B /* InfiniteScrollviewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE496B7E1BCE45E300D0055B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE496B871BCE45E300D0055B /* InfiniteScrollviewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE496B791BCE45E300D0055B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE496B5D1BCE45E300D0055B /* InfiniteScrollview */;
+			targetProxy = EE496B781BCE45E300D0055B /* PBXContainerItemProxy */;
+		};
+		EE496B841BCE45E300D0055B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE496B5D1BCE45E300D0055B /* InfiniteScrollview */;
+			targetProxy = EE496B831BCE45E300D0055B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE496B6A1BCE45E300D0055B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE496B6B1BCE45E300D0055B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE496B6F1BCE45E300D0055B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE496B701BCE45E300D0055B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE496B891BCE45E300D0055B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 遥 马 (S7QPCJJ82B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE496B8A1BCE45E300D0055B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 遥 马 (S7QPCJJ82B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE496B8C1BCE45E300D0055B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 遥 马 (S7QPCJJ82B)";
+				INFOPLIST_FILE = InfiniteScrollview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.InfiniteScrollview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE496B8D1BCE45E300D0055B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 遥 马 (S7QPCJJ82B)";
+				INFOPLIST_FILE = InfiniteScrollview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.InfiniteScrollview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EE496B8F1BCE45E300D0055B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = InfiniteScrollviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.InfiniteScrollviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InfiniteScrollview.app/InfiniteScrollview";
+			};
+			name = Debug;
+		};
+		EE496B901BCE45E300D0055B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = InfiniteScrollviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.InfiniteScrollviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InfiniteScrollview.app/InfiniteScrollview";
+			};
+			name = Release;
+		};
+		EE496B921BCE45E300D0055B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = InfiniteScrollviewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.InfiniteScrollviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = InfiniteScrollview;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EE496B931BCE45E300D0055B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = InfiniteScrollviewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.InfiniteScrollviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = InfiniteScrollview;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE496B591BCE45E200D0055B /* Build configuration list for PBXProject "InfiniteScrollview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE496B891BCE45E300D0055B /* Debug */,
+				EE496B8A1BCE45E300D0055B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE496B8B1BCE45E300D0055B /* Build configuration list for PBXNativeTarget "InfiniteScrollview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE496B8C1BCE45E300D0055B /* Debug */,
+				EE496B8D1BCE45E300D0055B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE496B8E1BCE45E300D0055B /* Build configuration list for PBXNativeTarget "InfiniteScrollviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE496B8F1BCE45E300D0055B /* Debug */,
+				EE496B901BCE45E300D0055B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE496B911BCE45E300D0055B /* Build configuration list for PBXNativeTarget "InfiniteScrollviewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE496B921BCE45E300D0055B /* Debug */,
+				EE496B931BCE45E300D0055B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE496B561BCE45E200D0055B /* Project object */;
+}

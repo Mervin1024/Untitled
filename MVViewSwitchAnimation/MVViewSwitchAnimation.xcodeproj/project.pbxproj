@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE579E0A1BD5DFA400198DD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE579E091BD5DFA400198DD2 /* main.m */; };
+		EE579E0D1BD5DFA400198DD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE579E0C1BD5DFA400198DD2 /* AppDelegate.m */; };
+		EE579E101BD5DFA400198DD2 /* ViewAController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE579E0F1BD5DFA400198DD2 /* ViewAController.m */; };
+		EE579E131BD5DFA400198DD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE579E111BD5DFA400198DD2 /* Main.storyboard */; };
+		EE579E151BD5DFA400198DD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE579E141BD5DFA400198DD2 /* Assets.xcassets */; };
+		EE579E181BD5DFA400198DD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE579E161BD5DFA400198DD2 /* LaunchScreen.storyboard */; };
+		EE579E231BD5DFA400198DD2 /* MVViewSwitchAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE579E221BD5DFA400198DD2 /* MVViewSwitchAnimationTests.m */; };
+		EE579E2E1BD5DFA400198DD2 /* MVViewSwitchAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE579E2D1BD5DFA400198DD2 /* MVViewSwitchAnimationUITests.m */; };
+		EE579E491BD5E0EB00198DD2 /* ViewBController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE579E481BD5E0EB00198DD2 /* ViewBController.m */; settings = {ASSET_TAGS = (); }; };
+		EE579E4F1BD5E69F00198DD2 /* UIViewController+MVSwitchAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE579E4E1BD5E69F00198DD2 /* UIViewController+MVSwitchAnimation.m */; settings = {ASSET_TAGS = (); }; };
+		EE579E521BD5ECC500198DD2 /* SwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE579E511BD5ECC500198DD2 /* SwitchView.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE579E1F1BD5DFA400198DD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE579DFD1BD5DFA400198DD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE579E041BD5DFA400198DD2;
+			remoteInfo = MVViewSwitchAnimation;
+		};
+		EE579E2A1BD5DFA400198DD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE579DFD1BD5DFA400198DD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE579E041BD5DFA400198DD2;
+			remoteInfo = MVViewSwitchAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE579E051BD5DFA400198DD2 /* MVViewSwitchAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVViewSwitchAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE579E091BD5DFA400198DD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE579E0B1BD5DFA400198DD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE579E0C1BD5DFA400198DD2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE579E0E1BD5DFA400198DD2 /* ViewAController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewAController.h; sourceTree = "<group>"; };
+		EE579E0F1BD5DFA400198DD2 /* ViewAController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewAController.m; sourceTree = "<group>"; };
+		EE579E121BD5DFA400198DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE579E141BD5DFA400198DD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE579E171BD5DFA400198DD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE579E191BD5DFA400198DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE579E1E1BD5DFA400198DD2 /* MVViewSwitchAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVViewSwitchAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE579E221BD5DFA400198DD2 /* MVViewSwitchAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVViewSwitchAnimationTests.m; sourceTree = "<group>"; };
+		EE579E241BD5DFA400198DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE579E291BD5DFA400198DD2 /* MVViewSwitchAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVViewSwitchAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE579E2D1BD5DFA400198DD2 /* MVViewSwitchAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVViewSwitchAnimationUITests.m; sourceTree = "<group>"; };
+		EE579E2F1BD5DFA400198DD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE579E471BD5E0EB00198DD2 /* ViewBController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewBController.h; sourceTree = "<group>"; };
+		EE579E481BD5E0EB00198DD2 /* ViewBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewBController.m; sourceTree = "<group>"; };
+		EE579E4D1BD5E69F00198DD2 /* UIViewController+MVSwitchAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MVSwitchAnimation.h"; sourceTree = "<group>"; };
+		EE579E4E1BD5E69F00198DD2 /* UIViewController+MVSwitchAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MVSwitchAnimation.m"; sourceTree = "<group>"; };
+		EE579E501BD5ECC500198DD2 /* SwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchView.h; sourceTree = "<group>"; };
+		EE579E511BD5ECC500198DD2 /* SwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE579E021BD5DFA400198DD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE579E1B1BD5DFA400198DD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE579E261BD5DFA400198DD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE579DFC1BD5DFA400198DD2 = {
+			isa = PBXGroup;
+			children = (
+				EE579E071BD5DFA400198DD2 /* MVViewSwitchAnimation */,
+				EE579E211BD5DFA400198DD2 /* MVViewSwitchAnimationTests */,
+				EE579E2C1BD5DFA400198DD2 /* MVViewSwitchAnimationUITests */,
+				EE579E061BD5DFA400198DD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE579E061BD5DFA400198DD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE579E051BD5DFA400198DD2 /* MVViewSwitchAnimation.app */,
+				EE579E1E1BD5DFA400198DD2 /* MVViewSwitchAnimationTests.xctest */,
+				EE579E291BD5DFA400198DD2 /* MVViewSwitchAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE579E071BD5DFA400198DD2 /* MVViewSwitchAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				EE579E0B1BD5DFA400198DD2 /* AppDelegate.h */,
+				EE579E0C1BD5DFA400198DD2 /* AppDelegate.m */,
+				EE579E0E1BD5DFA400198DD2 /* ViewAController.h */,
+				EE579E0F1BD5DFA400198DD2 /* ViewAController.m */,
+				EE579E471BD5E0EB00198DD2 /* ViewBController.h */,
+				EE579E481BD5E0EB00198DD2 /* ViewBController.m */,
+				EE579E111BD5DFA400198DD2 /* Main.storyboard */,
+				EE579E4D1BD5E69F00198DD2 /* UIViewController+MVSwitchAnimation.h */,
+				EE579E4E1BD5E69F00198DD2 /* UIViewController+MVSwitchAnimation.m */,
+				EE579E501BD5ECC500198DD2 /* SwitchView.h */,
+				EE579E511BD5ECC500198DD2 /* SwitchView.m */,
+				EE579E141BD5DFA400198DD2 /* Assets.xcassets */,
+				EE579E161BD5DFA400198DD2 /* LaunchScreen.storyboard */,
+				EE579E191BD5DFA400198DD2 /* Info.plist */,
+				EE579E081BD5DFA400198DD2 /* Supporting Files */,
+			);
+			path = MVViewSwitchAnimation;
+			sourceTree = "<group>";
+		};
+		EE579E081BD5DFA400198DD2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE579E091BD5DFA400198DD2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE579E211BD5DFA400198DD2 /* MVViewSwitchAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE579E221BD5DFA400198DD2 /* MVViewSwitchAnimationTests.m */,
+				EE579E241BD5DFA400198DD2 /* Info.plist */,
+			);
+			path = MVViewSwitchAnimationTests;
+			sourceTree = "<group>";
+		};
+		EE579E2C1BD5DFA400198DD2 /* MVViewSwitchAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE579E2D1BD5DFA400198DD2 /* MVViewSwitchAnimationUITests.m */,
+				EE579E2F1BD5DFA400198DD2 /* Info.plist */,
+			);
+			path = MVViewSwitchAnimationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE579E041BD5DFA400198DD2 /* MVViewSwitchAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE579E321BD5DFA400198DD2 /* Build configuration list for PBXNativeTarget "MVViewSwitchAnimation" */;
+			buildPhases = (
+				EE579E011BD5DFA400198DD2 /* Sources */,
+				EE579E021BD5DFA400198DD2 /* Frameworks */,
+				EE579E031BD5DFA400198DD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MVViewSwitchAnimation;
+			productName = MVViewSwitchAnimation;
+			productReference = EE579E051BD5DFA400198DD2 /* MVViewSwitchAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE579E1D1BD5DFA400198DD2 /* MVViewSwitchAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE579E351BD5DFA400198DD2 /* Build configuration list for PBXNativeTarget "MVViewSwitchAnimationTests" */;
+			buildPhases = (
+				EE579E1A1BD5DFA400198DD2 /* Sources */,
+				EE579E1B1BD5DFA400198DD2 /* Frameworks */,
+				EE579E1C1BD5DFA400198DD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE579E201BD5DFA400198DD2 /* PBXTargetDependency */,
+			);
+			name = MVViewSwitchAnimationTests;
+			productName = MVViewSwitchAnimationTests;
+			productReference = EE579E1E1BD5DFA400198DD2 /* MVViewSwitchAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE579E281BD5DFA400198DD2 /* MVViewSwitchAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE579E381BD5DFA400198DD2 /* Build configuration list for PBXNativeTarget "MVViewSwitchAnimationUITests" */;
+			buildPhases = (
+				EE579E251BD5DFA400198DD2 /* Sources */,
+				EE579E261BD5DFA400198DD2 /* Frameworks */,
+				EE579E271BD5DFA400198DD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE579E2B1BD5DFA400198DD2 /* PBXTargetDependency */,
+			);
+			name = MVViewSwitchAnimationUITests;
+			productName = MVViewSwitchAnimationUITests;
+			productReference = EE579E291BD5DFA400198DD2 /* MVViewSwitchAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE579DFD1BD5DFA400198DD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = sh219;
+				TargetAttributes = {
+					EE579E041BD5DFA400198DD2 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					EE579E1D1BD5DFA400198DD2 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EE579E041BD5DFA400198DD2;
+					};
+					EE579E281BD5DFA400198DD2 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EE579E041BD5DFA400198DD2;
+					};
+				};
+			};
+			buildConfigurationList = EE579E001BD5DFA400198DD2 /* Build configuration list for PBXProject "MVViewSwitchAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE579DFC1BD5DFA400198DD2;
+			productRefGroup = EE579E061BD5DFA400198DD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE579E041BD5DFA400198DD2 /* MVViewSwitchAnimation */,
+				EE579E1D1BD5DFA400198DD2 /* MVViewSwitchAnimationTests */,
+				EE579E281BD5DFA400198DD2 /* MVViewSwitchAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE579E031BD5DFA400198DD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE579E181BD5DFA400198DD2 /* LaunchScreen.storyboard in Resources */,
+				EE579E151BD5DFA400198DD2 /* Assets.xcassets in Resources */,
+				EE579E131BD5DFA400198DD2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE579E1C1BD5DFA400198DD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE579E271BD5DFA400198DD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE579E011BD5DFA400198DD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE579E521BD5ECC500198DD2 /* SwitchView.m in Sources */,
+				EE579E101BD5DFA400198DD2 /* ViewAController.m in Sources */,
+				EE579E491BD5E0EB00198DD2 /* ViewBController.m in Sources */,
+				EE579E0D1BD5DFA400198DD2 /* AppDelegate.m in Sources */,
+				EE579E0A1BD5DFA400198DD2 /* main.m in Sources */,
+				EE579E4F1BD5E69F00198DD2 /* UIViewController+MVSwitchAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE579E1A1BD5DFA400198DD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE579E231BD5DFA400198DD2 /* MVViewSwitchAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE579E251BD5DFA400198DD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE579E2E1BD5DFA400198DD2 /* MVViewSwitchAnimationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE579E201BD5DFA400198DD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE579E041BD5DFA400198DD2 /* MVViewSwitchAnimation */;
+			targetProxy = EE579E1F1BD5DFA400198DD2 /* PBXContainerItemProxy */;
+		};
+		EE579E2B1BD5DFA400198DD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE579E041BD5DFA400198DD2 /* MVViewSwitchAnimation */;
+			targetProxy = EE579E2A1BD5DFA400198DD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE579E111BD5DFA400198DD2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE579E121BD5DFA400198DD2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE579E161BD5DFA400198DD2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE579E171BD5DFA400198DD2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE579E301BD5DFA400198DD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE579E311BD5DFA400198DD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE579E331BD5DFA400198DD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MVViewSwitchAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.MVViewSwitchAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE579E341BD5DFA400198DD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MVViewSwitchAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.MVViewSwitchAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EE579E361BD5DFA400198DD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MVViewSwitchAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.MVViewSwitchAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVViewSwitchAnimation.app/MVViewSwitchAnimation";
+			};
+			name = Debug;
+		};
+		EE579E371BD5DFA400198DD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MVViewSwitchAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.MVViewSwitchAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVViewSwitchAnimation.app/MVViewSwitchAnimation";
+			};
+			name = Release;
+		};
+		EE579E391BD5DFA400198DD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MVViewSwitchAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.MVViewSwitchAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MVViewSwitchAnimation;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EE579E3A1BD5DFA400198DD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MVViewSwitchAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.MVViewSwitchAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MVViewSwitchAnimation;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE579E001BD5DFA400198DD2 /* Build configuration list for PBXProject "MVViewSwitchAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE579E301BD5DFA400198DD2 /* Debug */,
+				EE579E311BD5DFA400198DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE579E321BD5DFA400198DD2 /* Build configuration list for PBXNativeTarget "MVViewSwitchAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE579E331BD5DFA400198DD2 /* Debug */,
+				EE579E341BD5DFA400198DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE579E351BD5DFA400198DD2 /* Build configuration list for PBXNativeTarget "MVViewSwitchAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE579E361BD5DFA400198DD2 /* Debug */,
+				EE579E371BD5DFA400198DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE579E381BD5DFA400198DD2 /* Build configuration list for PBXNativeTarget "MVViewSwitchAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE579E391BD5DFA400198DD2 /* Debug */,
+				EE579E3A1BD5DFA400198DD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE579DFD1BD5DFA400198DD2 /* Project object */;
+}

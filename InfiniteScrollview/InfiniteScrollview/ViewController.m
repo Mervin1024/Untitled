@@ -34,7 +34,7 @@
     InfiniteScrollView.contentSize = CGSizeMake(SCREEN_WIDTH*3, SCREEN_HEIGHT);
     InfiniteScrollView.contentOffset = CGPointMake(SCREEN_WIDTH, 0);
     InfiniteScrollView.bounces = NO;
-    InfiniteScrollView.pagingEnabled = YES;
+    InfiniteScrollView.pagingEnabled = NO;
     InfiniteScrollView.showsHorizontalScrollIndicator = NO;
     colorArray = @[[UIColor redColor],[UIColor blueColor],[UIColor greenColor]];
     

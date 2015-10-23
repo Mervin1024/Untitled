@@ -11,15 +11,21 @@
 @interface SwitchView () {
     NSTimer *timer;
     NSInteger times;
+    NSInteger animationsCount;
+    NSInteger maxCount;
+    
     NSMutableArray *begin_changed;
     void (^beginCompletion) (void);
     void (^stopCompletion) (void);
+    void (^changeViewBegin) (UIView *);
+    void (^changeViewStop) (UIView *);
 }
 
 @end
 static UIWindow *__sheetWindow = nil;
+static CGFloat interval = 0.5;
 @implementation SwitchView
-int numberOfPages = 9;
+int numberOfPages = 10;
 - (instancetype)init{
     self = [super initWithFrame:[UIScreen mainScreen].bounds];
     if (self) {
@@ -48,124 +54,131 @@ int numberOfPages = 9;
                 [view setFrame:CGRectMake(view.center.x-1, view.center.y-1, 2, 2)];
                 view.tag = x * numberOfPages + y;
                 view.backgroundColor = [UIColor blackColor];
-                view.hidden = YES;
+                view.alpha = 0.0f;
+//                view.hidden = YES;
                 [self addSubview:view];
                 int diff = y - x;
-                [[begin_changed objectAtIndex:(8-diff)] addObject:view];
+                [[begin_changed objectAtIndex:(numberOfPages-1-diff)] addObject:view];
             }
         }
-//        self.hidden = YES;
-        UIWindow *window = [[UIWindow alloc] initWithFrame:(CGRect) {{0.f, 0.f}, [[UIScreen mainScreen] bounds].size}];
-        window.backgroundColor = [UIColor clearColor];
-        window.windowLevel = UIWindowLevelNormal;
-        window.alpha = 1.f;
-        window.hidden = YES;
-        [window addSubview:self];
-        __sheetWindow = window;
+        
+        changeViewBegin = ^(UIView *view){
+            [view setFrame:CGRectMake(view.center.x - widht/2, view.center.y - height/2, widht, height)];
+            view.alpha = 1.0f;
+//            view.hidden = NO;
+        };
+        changeViewStop = ^(UIView *view){
+            [view setFrame:CGRectMake(view.center.x-1, view.center.y-1, 2, 2)];
+            view.alpha = 0.0f;
+            
+        };
+        animationsCount = [self countOfAnimations];
+        [self initWindow];
     }
     return self;
 }
 
+- (void)initWindow{
+    UIWindow *window = [[UIWindow alloc] initWithFrame:(CGRect) {{0.f, 0.f}, [[UIScreen mainScreen] bounds].size}];
+    window.backgroundColor = [UIColor clearColor];
+    window.windowLevel = UIWindowLevelNormal;
+    window.hidden = NO;
+    [window addSubview:self];
+    __sheetWindow = window;
+}
+
+- (NSInteger)countOfAnimations{
+    NSInteger sum;
+    NSInteger dif;
+    NSInteger count;
+    for (int a = 1; a < [begin_changed count]; a++) {
+        sum += a;
+        if (sum >= [begin_changed count]) {
+            count = a;
+            dif = [begin_changed count] - (sum - a);
+            if (dif == 0) {
+                maxCount = a;
+            }else{
+                maxCount = a - 1;
+            }
+            break;
+        }
+    }
+    count += dif - 1;
+    return count;
+}
+
 - (void)beginSwitchAnimationWithAppearCompletion:(void (^)(void))Acompletion dismissCompletion:(void (^)(void))Dcompletion{
-//    self.hidden = NO;
-    __sheetWindow.hidden = NO;
+    if (!__sheetWindow) {
+        [self initWindow];
+    }
     times = 0;
-    timer = [NSTimer timerWithTimeInterval:0.1 target:self selector:@selector(beginViewAnimation:) userInfo:nil repeats:YES];
+    CGFloat inte = interval/animationsCount;
+    timer = [NSTimer timerWithTimeInterval:inte target:self selector:@selector(beginViewAnimation:) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     [timer fire];
     beginCompletion = Acompletion;
     stopCompletion = Dcompletion;
 }
 
+
 - (void)beginViewAnimation:(id)sender{
-    CGFloat widht = SCREEN_WIDTH/numberOfPages;
-    CGFloat height = SCREEN_HEIGHT/numberOfPages;
-    
-    NSMutableArray *array = [NSMutableArray array];
-    if (times == 0) {
-        times++;
-        [array addObjectsFromArray:begin_changed[0]];
-        [array addObjectsFromArray:begin_changed[1]];
-        [array addObjectsFromArray:begin_changed[2]];
-        [array addObjectsFromArray:begin_changed[3]];
-        [array addObjectsFromArray:begin_changed[4]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x - widht/2, view.center.y - height/2, widht, height)];
-                view.hidden = NO;
-            }
-            
-        }completion:nil];
-    }else if (times == 1){
-        times++;
-        [array addObjectsFromArray:begin_changed[5]];
-        [array addObjectsFromArray:begin_changed[6]];
-        [array addObjectsFromArray:begin_changed[7]];
-        [array addObjectsFromArray:begin_changed[8]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x - widht/2, view.center.y - height/2, widht, height)];
-                view.hidden = NO;
-            }
-        }completion:nil];
-    }else if (times == 2){
-        times++;
-        [array addObjectsFromArray:begin_changed[9]];
-        [array addObjectsFromArray:begin_changed[10]];
-        [array addObjectsFromArray:begin_changed[11]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x - widht/2, view.center.y - height/2, widht, height)];
-                view.hidden = NO;
-            }
-        }completion:nil];
-    }else if (times == 3){
-        times++;
-        [array addObjectsFromArray:begin_changed[12]];
-        [array addObjectsFromArray:begin_changed[13]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x - widht/2, view.center.y - height/2, widht, height)];
-                view.hidden = NO;
-            }
-        }completion:nil];
-    }else if (times == 4){
-        times++;
-        [array addObjectsFromArray:begin_changed[14]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x - widht/2, view.center.y - height/2, widht, height)];
-                view.hidden = NO;
-            }
-        }completion:nil];
-    }else if (times == 5){
-        times++;
-        [array addObjectsFromArray:begin_changed[15]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x - widht/2, view.center.y - height/2, widht, height)];
-                view.hidden = NO;
-            }
-        }completion:nil];
-    }else if (times == 6){
-        times++;
-        [array addObjectsFromArray:begin_changed[16]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x - widht/2, view.center.y - height/2, widht, height)];
-                view.hidden = NO;
-            }
-        }completion:^(BOOL finished){
-            if (beginCompletion) {
-                beginCompletion();
-                beginCompletion = nil;
-            }
-        }];
-    }else{
-        [timer invalidate];
+    NSInteger num = 0;
+    for (int i = 0; i < times; i++) {
+        if (times < animationsCount && maxCount-i <= 0) {
+            num += 1;
+        }else{
+            num += maxCount-i;
+        }
         
-        [self performSelector:@selector(stopSwitchAnimation) withObject:nil afterDelay:0.5];
     }
+    NSMutableArray *array = [NSMutableArray array];
+    for (int i = 0; i < animationsCount; i++) {
+        if (times == i && i == animationsCount -1) {
+            times++;
+            [array addObjectsFromArray:[begin_changed lastObject]];
+            [UIView animateWithDuration:interval animations:^{
+                for (UIView *view in array) {
+                    changeViewBegin(view);
+                }
+            }completion:^(BOOL finished){
+                if (finished) {
+                    if (beginCompletion) {
+                        beginCompletion();
+                        beginCompletion = nil;
+                    }
+                }
+            }];
+            return;
+        }else if (times == i && maxCount - i > 1) {
+            times++;
+            for (int j = 0; j < maxCount-i; j++) {
+                NSInteger index = j+num;
+                [array addObjectsFromArray:[begin_changed objectAtIndex:index]];
+            }
+            [UIView animateWithDuration:interval animations:^{
+                for (UIView *view in array) {
+                    changeViewBegin(view);
+                }
+                
+            }completion:nil];
+            return;
+        }else if (times == i && maxCount - i <= 1){
+            times++;
+            NSInteger index = num;
+            [array addObjectsFromArray:[begin_changed objectAtIndex:index]];
+            [UIView animateWithDuration:interval animations:^{
+                for (UIView *view in array) {
+                    changeViewBegin(view);
+                }
+            }completion:nil];
+            return;
+        }else{
+            continue;
+        }
+    }
+    [timer invalidate];
+    [self performSelector:@selector(stopSwitchAnimation) withObject:nil afterDelay:interval];
 }
 
 - (void)stopSwitchAnimation{
@@ -176,129 +189,81 @@ int numberOfPages = 9;
 }
 
 - (void)stopViewAnimation:(id)sender{
-    NSMutableArray *array = [NSMutableArray array];
-    if (times == 0) {
-        times++;
-        [array addObjectsFromArray:begin_changed[0]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x-1, view.center.y-1, 2, 2)];
-            }
-        }completion:^(BOOL finished){
-            if (finished) {
-                for (UIView *view in array) {
-                    view.hidden = YES;
-                }
-            }
-        }];
-    }else if (times == 1){
-        times++;
-        [array addObjectsFromArray:begin_changed[1]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x-1, view.center.y-1, 2, 2)];
-            }
-        }completion:^(BOOL finished){
-            if (finished) {
-                for (UIView *view in array) {
-                    view.hidden = YES;
-                }
-            }
-        }];
-    }else if (times == 2){
-        times++;
-        [array addObjectsFromArray:begin_changed[2]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x-1, view.center.y-1, 2, 2)];
-            }
-        }completion:^(BOOL finished){
-            if (finished) {
-                for (UIView *view in array) {
-                    view.hidden = YES;
-                }
-            }
-        }];
-    }else if (times == 3){
-        times++;
-        [array addObjectsFromArray:begin_changed[3]];
-        [array addObjectsFromArray:begin_changed[4]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x-1, view.center.y-1, 2, 2)];
-            }
-        }completion:^(BOOL finished){
-            if (finished) {
-                for (UIView *view in array) {
-                    view.hidden = YES;
-                }
-            }
-        }];
-    }else if (times == 4){
-        times++;
-        [array addObjectsFromArray:begin_changed[5]];
-        [array addObjectsFromArray:begin_changed[6]];
-        [array addObjectsFromArray:begin_changed[7]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x-1, view.center.y-1, 2, 2)];
-            }
-        }completion:^(BOOL finished){
-            if (finished) {
-                for (UIView *view in array) {
-                    view.hidden = YES;
-                }
-            }
-        }];
-    }else if (times == 5){
-        times++;
-        [array addObjectsFromArray:begin_changed[8]];
-        [array addObjectsFromArray:begin_changed[9]];
-        [array addObjectsFromArray:begin_changed[10]];
-        [array addObjectsFromArray:begin_changed[11]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x-1, view.center.y-1, 2, 2)];
-            }
-        }completion:^(BOOL finished){
-            if (finished) {
-                for (UIView *view in array) {
-                    view.hidden = YES;
-                }
-            }
-        }];
-    }else if (times == 6){
-        times++;
-        [array addObjectsFromArray:begin_changed[12]];
-        [array addObjectsFromArray:begin_changed[13]];
-        [array addObjectsFromArray:begin_changed[14]];
-        [array addObjectsFromArray:begin_changed[15]];
-        [array addObjectsFromArray:begin_changed[16]];
-        [UIView animateWithDuration:0.5 animations:^{
-            for (UIView *view in array) {
-                [view setFrame:CGRectMake(view.center.x-1, view.center.y-1, 2, 2)];
-            }
-        }completion:^(BOOL finished){
-            if (finished) {
-                for (UIView *view in array) {
-                    view.hidden = YES;
-                }
-                if (stopCompletion) {
-                    stopCompletion();
-                    stopCompletion = nil;
-                }
-            }
-            [self removeWindow];
-        }];
-    }else{
-        [timer invalidate];
-        
+    NSInteger num = 0;
+    for (int i = 0; i < times; i++) {
+        if (times < animationsCount && maxCount-i <= 0) {
+            num += 1;
+        }else{
+            num += maxCount-i;
+        }
         
     }
+    NSMutableArray *array = [NSMutableArray array];
+    for (int i = 0; i < animationsCount; i++) {
+        if (times == i && i == animationsCount -1) {
+            times++;
+            [array addObjectsFromArray:[begin_changed lastObject]];
+            [UIView animateWithDuration:interval animations:^{
+                for (UIView *view in array) {
+                    changeViewStop(view);
+                }
+            }completion:^(BOOL finished){
+                if (finished) {
+//                    for (UIView *view in array) {
+//                        view.hidden = YES;
+//                    }
+                    if (stopCompletion) {
+                        stopCompletion();
+                        stopCompletion = nil;
+                    }
+                    [self removeWindow];
+                }
+            }];
+            return;
+        }else if (times == i && maxCount - i > 1) {
+            times++;
+            for (int j = 0; j < maxCount-i; j++) {
+                NSInteger index = (j+num);
+                [array addObjectsFromArray:[begin_changed objectAtIndex:index]];
+            }
+            [UIView animateWithDuration:interval animations:^{
+                for (UIView *view in array) {
+                    changeViewStop(view);
+                }
+                
+            }completion:^(BOOL finished){
+//                if (finished) {
+//                    for (UIView *view in array) {
+//                        view.hidden = YES;
+//                    }
+//                }
+            }];
+            return;
+        }else if (times == i && maxCount - i <= 1){
+            times++;
+            NSInteger index = num;
+            [array addObjectsFromArray:[begin_changed objectAtIndex:index]];
+            [UIView animateWithDuration:interval animations:^{
+                for (UIView *view in array) {
+                    changeViewStop(view);
+                }
+            }completion:^(BOOL finished){
+//                if (finished) {
+//                    for (UIView *view in array) {
+//                        view.hidden = YES;
+//                    }
+//                }
+            }];
+            return;
+        }else{
+            continue;
+        }
+    }
+        [timer invalidate];
+    
 }
 
 - (void)removeWindow{
-    __sheetWindow.hidden = YES;
     __sheetWindow = nil;
 }
 

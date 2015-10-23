@@ -7,11 +7,13 @@
 //
 
 #import "UIViewController+MVSwitchAnimation.h"
-
+static SwitchView *switchView = nil;
 @implementation UIViewController (MVSwitchAnimation)
 - (void)switchViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^)(void))completion{
     if (flag) {
-        SwitchView *switchView = [[SwitchView alloc] init];
+        if (!switchView) {
+            switchView = [[SwitchView alloc] init];
+        }
         [switchView beginSwitchAnimationWithAppearCompletion:^{
             [self presentViewController:viewControllerToPresent animated:NO completion:nil];
         }dismissCompletion:completion];
@@ -22,7 +24,9 @@
 }
 - (void)dismissSwitchViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion{
     if (flag) {
-        SwitchView *switchView = [[SwitchView alloc] init];
+        if (!switchView) {
+            switchView = [[SwitchView alloc] init];
+        }
         [switchView beginSwitchAnimationWithAppearCompletion:^{
             [self dismissViewControllerAnimated:NO completion:nil];
         }dismissCompletion:completion];

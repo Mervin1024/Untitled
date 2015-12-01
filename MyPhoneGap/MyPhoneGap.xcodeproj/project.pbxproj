@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEE918C01C0DAE990055D442 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE918BF1C0DAE990055D442 /* main.m */; };
+		EEE918C31C0DAE990055D442 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE918C21C0DAE990055D442 /* AppDelegate.m */; };
+		EEE918C61C0DAE990055D442 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE918C51C0DAE990055D442 /* ViewController.m */; };
+		EEE918C91C0DAE990055D442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE918C71C0DAE990055D442 /* Main.storyboard */; };
+		EEE918CB1C0DAE990055D442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE918CA1C0DAE990055D442 /* Assets.xcassets */; };
+		EEE918CE1C0DAE990055D442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE918CC1C0DAE990055D442 /* LaunchScreen.storyboard */; };
+		EEE918D91C0DAE990055D442 /* MyPhoneGapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE918D81C0DAE990055D442 /* MyPhoneGapTests.m */; };
+		EEE918E41C0DAE990055D442 /* MyPhoneGapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE918E31C0DAE990055D442 /* MyPhoneGapUITests.m */; };
+		EEE918F21C0DAEAC0055D442 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = EEE918F11C0DAEAC0055D442 /* index.html */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEE918D51C0DAE990055D442 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEE918B31C0DAE990055D442 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEE918BA1C0DAE990055D442;
+			remoteInfo = MyPhoneGap;
+		};
+		EEE918E01C0DAE990055D442 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEE918B31C0DAE990055D442 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEE918BA1C0DAE990055D442;
+			remoteInfo = MyPhoneGap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EEE918BB1C0DAE990055D442 /* MyPhoneGap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPhoneGap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE918BF1C0DAE990055D442 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEE918C11C0DAE990055D442 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EEE918C21C0DAE990055D442 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EEE918C41C0DAE990055D442 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EEE918C51C0DAE990055D442 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EEE918C81C0DAE990055D442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEE918CA1C0DAE990055D442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEE918CD1C0DAE990055D442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEE918CF1C0DAE990055D442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE918D41C0DAE990055D442 /* MyPhoneGapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPhoneGapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE918D81C0DAE990055D442 /* MyPhoneGapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPhoneGapTests.m; sourceTree = "<group>"; };
+		EEE918DA1C0DAE990055D442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE918DF1C0DAE990055D442 /* MyPhoneGapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPhoneGapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE918E31C0DAE990055D442 /* MyPhoneGapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPhoneGapUITests.m; sourceTree = "<group>"; };
+		EEE918E51C0DAE990055D442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE918F11C0DAEAC0055D442 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEE918B81C0DAE990055D442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE918D11C0DAE990055D442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE918DC1C0DAE990055D442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEE918B21C0DAE990055D442 = {
+			isa = PBXGroup;
+			children = (
+				EEE918BD1C0DAE990055D442 /* MyPhoneGap */,
+				EEE918D71C0DAE990055D442 /* MyPhoneGapTests */,
+				EEE918E21C0DAE990055D442 /* MyPhoneGapUITests */,
+				EEE918BC1C0DAE990055D442 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEE918BC1C0DAE990055D442 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEE918BB1C0DAE990055D442 /* MyPhoneGap.app */,
+				EEE918D41C0DAE990055D442 /* MyPhoneGapTests.xctest */,
+				EEE918DF1C0DAE990055D442 /* MyPhoneGapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEE918BD1C0DAE990055D442 /* MyPhoneGap */ = {
+			isa = PBXGroup;
+			children = (
+				EEE918C11C0DAE990055D442 /* AppDelegate.h */,
+				EEE918C21C0DAE990055D442 /* AppDelegate.m */,
+				EEE918C41C0DAE990055D442 /* ViewController.h */,
+				EEE918C51C0DAE990055D442 /* ViewController.m */,
+				EEE918C71C0DAE990055D442 /* Main.storyboard */,
+				EEE918CA1C0DAE990055D442 /* Assets.xcassets */,
+				EEE918CC1C0DAE990055D442 /* LaunchScreen.storyboard */,
+				EEE918CF1C0DAE990055D442 /* Info.plist */,
+				EEE918F11C0DAEAC0055D442 /* index.html */,
+				EEE918BE1C0DAE990055D442 /* Supporting Files */,
+			);
+			path = MyPhoneGap;
+			sourceTree = "<group>";
+		};
+		EEE918BE1C0DAE990055D442 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEE918BF1C0DAE990055D442 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEE918D71C0DAE990055D442 /* MyPhoneGapTests */ = {
+			isa = PBXGroup;
+			children = (
+				EEE918D81C0DAE990055D442 /* MyPhoneGapTests.m */,
+				EEE918DA1C0DAE990055D442 /* Info.plist */,
+			);
+			path = MyPhoneGapTests;
+			sourceTree = "<group>";
+		};
+		EEE918E21C0DAE990055D442 /* MyPhoneGapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EEE918E31C0DAE990055D442 /* MyPhoneGapUITests.m */,
+				EEE918E51C0DAE990055D442 /* Info.plist */,
+			);
+			path = MyPhoneGapUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEE918BA1C0DAE990055D442 /* MyPhoneGap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE918E81C0DAE990055D442 /* Build configuration list for PBXNativeTarget "MyPhoneGap" */;
+			buildPhases = (
+				EEE918B71C0DAE990055D442 /* Sources */,
+				EEE918B81C0DAE990055D442 /* Frameworks */,
+				EEE918B91C0DAE990055D442 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyPhoneGap;
+			productName = MyPhoneGap;
+			productReference = EEE918BB1C0DAE990055D442 /* MyPhoneGap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEE918D31C0DAE990055D442 /* MyPhoneGapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE918EB1C0DAE990055D442 /* Build configuration list for PBXNativeTarget "MyPhoneGapTests" */;
+			buildPhases = (
+				EEE918D01C0DAE990055D442 /* Sources */,
+				EEE918D11C0DAE990055D442 /* Frameworks */,
+				EEE918D21C0DAE990055D442 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEE918D61C0DAE990055D442 /* PBXTargetDependency */,
+			);
+			name = MyPhoneGapTests;
+			productName = MyPhoneGapTests;
+			productReference = EEE918D41C0DAE990055D442 /* MyPhoneGapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEE918DE1C0DAE990055D442 /* MyPhoneGapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE918EE1C0DAE990055D442 /* Build configuration list for PBXNativeTarget "MyPhoneGapUITests" */;
+			buildPhases = (
+				EEE918DB1C0DAE990055D442 /* Sources */,
+				EEE918DC1C0DAE990055D442 /* Frameworks */,
+				EEE918DD1C0DAE990055D442 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEE918E11C0DAE990055D442 /* PBXTargetDependency */,
+			);
+			name = MyPhoneGapUITests;
+			productName = MyPhoneGapUITests;
+			productReference = EEE918DF1C0DAE990055D442 /* MyPhoneGapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEE918B31C0DAE990055D442 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = sh219;
+				TargetAttributes = {
+					EEE918BA1C0DAE990055D442 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					EEE918D31C0DAE990055D442 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EEE918BA1C0DAE990055D442;
+					};
+					EEE918DE1C0DAE990055D442 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = EEE918BA1C0DAE990055D442;
+					};
+				};
+			};
+			buildConfigurationList = EEE918B61C0DAE990055D442 /* Build configuration list for PBXProject "MyPhoneGap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEE918B21C0DAE990055D442;
+			productRefGroup = EEE918BC1C0DAE990055D442 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEE918BA1C0DAE990055D442 /* MyPhoneGap */,
+				EEE918D31C0DAE990055D442 /* MyPhoneGapTests */,
+				EEE918DE1C0DAE990055D442 /* MyPhoneGapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEE918B91C0DAE990055D442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE918CE1C0DAE990055D442 /* LaunchScreen.storyboard in Resources */,
+				EEE918F21C0DAEAC0055D442 /* index.html in Resources */,
+				EEE918CB1C0DAE990055D442 /* Assets.xcassets in Resources */,
+				EEE918C91C0DAE990055D442 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE918D21C0DAE990055D442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE918DD1C0DAE990055D442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEE918B71C0DAE990055D442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE918C61C0DAE990055D442 /* ViewController.m in Sources */,
+				EEE918C31C0DAE990055D442 /* AppDelegate.m in Sources */,
+				EEE918C01C0DAE990055D442 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE918D01C0DAE990055D442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE918D91C0DAE990055D442 /* MyPhoneGapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE918DB1C0DAE990055D442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE918E41C0DAE990055D442 /* MyPhoneGapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEE918D61C0DAE990055D442 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEE918BA1C0DAE990055D442 /* MyPhoneGap */;
+			targetProxy = EEE918D51C0DAE990055D442 /* PBXContainerItemProxy */;
+		};
+		EEE918E11C0DAE990055D442 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEE918BA1C0DAE990055D442 /* MyPhoneGap */;
+			targetProxy = EEE918E01C0DAE990055D442 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EEE918C71C0DAE990055D442 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEE918C81C0DAE990055D442 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EEE918CC1C0DAE990055D442 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEE918CD1C0DAE990055D442 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEE918E61C0DAE990055D442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EEE918E71C0DAE990055D442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEE918E91C0DAE990055D442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyPhoneGap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.MyPhoneGap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EEE918EA1C0DAE990055D442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyPhoneGap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.MyPhoneGap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EEE918EC1C0DAE990055D442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyPhoneGapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.MyPhoneGapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyPhoneGap.app/MyPhoneGap";
+			};
+			name = Debug;
+		};
+		EEE918ED1C0DAE990055D442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MyPhoneGapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.MyPhoneGapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyPhoneGap.app/MyPhoneGap";
+			};
+			name = Release;
+		};
+		EEE918EF1C0DAE990055D442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyPhoneGapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.MyPhoneGapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyPhoneGap;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EEE918F01C0DAE990055D442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyPhoneGapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mervin1024.MyPhoneGapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MyPhoneGap;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEE918B61C0DAE990055D442 /* Build configuration list for PBXProject "MyPhoneGap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE918E61C0DAE990055D442 /* Debug */,
+				EEE918E71C0DAE990055D442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE918E81C0DAE990055D442 /* Build configuration list for PBXNativeTarget "MyPhoneGap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE918E91C0DAE990055D442 /* Debug */,
+				EEE918EA1C0DAE990055D442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EEE918EB1C0DAE990055D442 /* Build configuration list for PBXNativeTarget "MyPhoneGapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE918EC1C0DAE990055D442 /* Debug */,
+				EEE918ED1C0DAE990055D442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EEE918EE1C0DAE990055D442 /* Build configuration list for PBXNativeTarget "MyPhoneGapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE918EF1C0DAE990055D442 /* Debug */,
+				EEE918F01C0DAE990055D442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEE918B31C0DAE990055D442 /* Project object */;
+}

@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MyPhoneGap/MyPhoneGap.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:WebViewTest/WebViewTest.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:InfiniteScrollview/InfiniteScrollview.xcodeproj">
    </FileRef>
    <FileRef

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta name="viewport"
+	    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalabel=no;" />
+	<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+	<script>
+	    function helloWorld(msg) {
+            document.getElementById('message').innerHTML = msg;
+            
+            // 必须加入 window.loaction = uri 方法
+            var uri = 'my://ViewController.HelloWorld#' + msg;
+            window.location = uri;
+            // 来触发webView:shouldStartLoadWithRequest:navigationType:回调消息
+	}
+	</script>
+    </head>
+    <body>
+	<h2>调用iOS方法</h2>
+	<button onclick='helloWorld("调用iOS方法")'>HelloWorld</button>
+    <br><br>
+    <div id='message'></div>
+    </body>
+</html> 

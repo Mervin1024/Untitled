@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EEE918C01C0DAE990055D442 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE918BF1C0DAE990055D442 /* main.m */; };
 		EEE918C31C0DAE990055D442 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE918C21C0DAE990055D442 /* AppDelegate.m */; };
-		EEE918C61C0DAE990055D442 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE918C51C0DAE990055D442 /* ViewController.m */; };
+		EEE918C61C0DAE990055D442 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE918C51C0DAE990055D442 /* MasterViewController.m */; };
 		EEE918C91C0DAE990055D442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE918C71C0DAE990055D442 /* Main.storyboard */; };
 		EEE918CB1C0DAE990055D442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE918CA1C0DAE990055D442 /* Assets.xcassets */; };
 		EEE918CE1C0DAE990055D442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE918CC1C0DAE990055D442 /* LaunchScreen.storyboard */; };
@@ -40,8 +40,8 @@
 		EEE918BF1C0DAE990055D442 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EEE918C11C0DAE990055D442 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EEE918C21C0DAE990055D442 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EEE918C41C0DAE990055D442 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EEE918C51C0DAE990055D442 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EEE918C41C0DAE990055D442 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		EEE918C51C0DAE990055D442 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		EEE918C81C0DAE990055D442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEE918CA1C0DAE990055D442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEE918CD1C0DAE990055D442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,8 +105,8 @@
 			children = (
 				EEE918C11C0DAE990055D442 /* AppDelegate.h */,
 				EEE918C21C0DAE990055D442 /* AppDelegate.m */,
-				EEE918C41C0DAE990055D442 /* ViewController.h */,
-				EEE918C51C0DAE990055D442 /* ViewController.m */,
+				EEE918C41C0DAE990055D442 /* MasterViewController.h */,
+				EEE918C51C0DAE990055D442 /* MasterViewController.m */,
 				EEE918C71C0DAE990055D442 /* Main.storyboard */,
 				EEE918CA1C0DAE990055D442 /* Assets.xcassets */,
 				EEE918CC1C0DAE990055D442 /* LaunchScreen.storyboard */,
@@ -274,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEE918C61C0DAE990055D442 /* ViewController.m in Sources */,
+				EEE918C61C0DAE990055D442 /* MasterViewController.m in Sources */,
 				EEE918C31C0DAE990055D442 /* AppDelegate.m in Sources */,
 				EEE918C01C0DAE990055D442 /* main.m in Sources */,
 			);
@@ -500,6 +500,7 @@
 				EEE918EA1C0DAE990055D442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EEE918EB1C0DAE990055D442 /* Build configuration list for PBXNativeTarget "MyPhoneGapTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +509,7 @@
 				EEE918ED1C0DAE990055D442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EEE918EE1C0DAE990055D442 /* Build configuration list for PBXNativeTarget "MyPhoneGapUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +518,7 @@
 				EEE918F01C0DAE990055D442 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

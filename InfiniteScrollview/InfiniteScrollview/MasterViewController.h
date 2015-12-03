@@ -13,7 +13,7 @@
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
-@interface ViewController : UIViewController
+@interface MasterViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIScrollView *InfiniteScrollView;
 

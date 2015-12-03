@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MyNotes/MyNotes.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MyPhoneGap/MyPhoneGap.xcodeproj">
    </FileRef>
    <FileRef

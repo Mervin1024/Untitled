@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EEE917341C0D6D2B0055D442 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE917331C0D6D2B0055D442 /* main.m */; };
 		EEE917371C0D6D2B0055D442 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE917361C0D6D2B0055D442 /* AppDelegate.m */; };
-		EEE9173A1C0D6D2B0055D442 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE917391C0D6D2B0055D442 /* ViewController.m */; };
+		EEE9173A1C0D6D2B0055D442 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE917391C0D6D2B0055D442 /* MasterViewController.m */; };
 		EEE9173D1C0D6D2B0055D442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE9173B1C0D6D2B0055D442 /* Main.storyboard */; };
 		EEE9173F1C0D6D2B0055D442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE9173E1C0D6D2B0055D442 /* Assets.xcassets */; };
 		EEE917421C0D6D2B0055D442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE917401C0D6D2B0055D442 /* LaunchScreen.storyboard */; };
@@ -39,8 +39,8 @@
 		EEE917331C0D6D2B0055D442 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EEE917351C0D6D2B0055D442 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EEE917361C0D6D2B0055D442 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EEE917381C0D6D2B0055D442 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EEE917391C0D6D2B0055D442 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EEE917381C0D6D2B0055D442 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		EEE917391C0D6D2B0055D442 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		EEE9173C1C0D6D2B0055D442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEE9173E1C0D6D2B0055D442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEE917411C0D6D2B0055D442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 			children = (
 				EEE917351C0D6D2B0055D442 /* AppDelegate.h */,
 				EEE917361C0D6D2B0055D442 /* AppDelegate.m */,
-				EEE917381C0D6D2B0055D442 /* ViewController.h */,
-				EEE917391C0D6D2B0055D442 /* ViewController.m */,
+				EEE917381C0D6D2B0055D442 /* MasterViewController.h */,
+				EEE917391C0D6D2B0055D442 /* MasterViewController.m */,
 				EEE9173B1C0D6D2B0055D442 /* Main.storyboard */,
 				EEE9173E1C0D6D2B0055D442 /* Assets.xcassets */,
 				EEE917401C0D6D2B0055D442 /* LaunchScreen.storyboard */,
@@ -270,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEE9173A1C0D6D2B0055D442 /* ViewController.m in Sources */,
+				EEE9173A1C0D6D2B0055D442 /* MasterViewController.m in Sources */,
 				EEE917371C0D6D2B0055D442 /* AppDelegate.m in Sources */,
 				EEE917341C0D6D2B0055D442 /* main.m in Sources */,
 			);

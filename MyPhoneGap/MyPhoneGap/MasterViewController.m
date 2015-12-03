@@ -6,9 +6,9 @@
 //  Copyright © 2015年 sh219. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MasterViewController.h"
 
-@interface ViewController ()<UIWebViewDelegate>
+@interface MasterViewController ()<UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *mWebView;
 
 @end

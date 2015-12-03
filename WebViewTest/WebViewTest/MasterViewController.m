@@ -6,13 +6,13 @@
 //  Copyright © 2015年 sh219. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MasterViewController.h"
 
-@interface ViewController ()<UIWebViewDelegate, UIGestureRecognizerDelegate>
+@interface MasterViewController ()<UIWebViewDelegate, UIGestureRecognizerDelegate>
 
 @end
 
-@implementation ViewController
+@implementation MasterViewController
 @synthesize myWebView;
 - (void)viewDidLoad {
     [super viewDidLoad];

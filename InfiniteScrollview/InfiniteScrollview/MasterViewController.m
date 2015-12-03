@@ -6,9 +6,9 @@
 //  Copyright © 2015年 sh219. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MasterViewController.h"
 
-@interface ViewController ()<UIScrollViewDelegate>{
+@interface MasterViewController ()<UIScrollViewDelegate>{
     UIView *previousView;
     UIView *currentView;
     UIView *nextView;
@@ -24,7 +24,7 @@
 
 @end
 
-@implementation ViewController
+@implementation MasterViewController
 - (IBAction)pushView:(id)sender {
 }
 @synthesize InfiniteScrollView;

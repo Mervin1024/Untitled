@@ -32,11 +32,12 @@
     newTextView.editable = NO;
     newTextView.backgroundColor = [UIColor yellowColor];
     newTextView.text = textView.text;
+    newTextView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];//调用系统字体大小
     [textView removeFromSuperview];
     [self.view insertSubview:newTextView belowSubview:imageView];
-    //凸版印刷效果
+    //
     [textStorage beginEditing];
-//    NSDictionary *attrsDic = @{NSTextEffectAttributeName:NSTextEffectLetterpressStyle};
+//    NSDictionary *attrsDic = @{NSTextEffectAttributeName:NSTextEffectLetterpressStyle};  //凸版印刷效果
 //    
 //    NSMutableAttributedString *attrStr = [[NSMutableAttributedString alloc] initWithString:newTextView.text attributes:attrsDic];
 //    
@@ -47,7 +48,8 @@
     [textStorage endEditing];
     
     newTextView.textContainer.exclusionPaths = @[[self translatedBezierPath]];
-//    NSLog(@"%@",newTextView.text);
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(preferredContentSizeChanged:) name:UIContentSizeCategoryDidChangeNotification object:nil];// 系统字体改变
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,12 +59,11 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-//    NSLog(@"%@",NSStringFromCGRect(imageView.frame));
 }
 
 - (void)markWord:(NSString *)word inTextStorage:(NSTextStorage *)textStorage{
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:word options:0 error:nil];
-    
+    //正则表达式
     NSArray *matches = [regex matchesInString:newTextView.text options:0 range:NSMakeRange(0, newTextView.text.length)];
     for (NSTextCheckingResult *match in matches) {
         NSRange matchRange = [match range];
@@ -75,12 +76,14 @@
 
 - (UIBezierPath *)translatedBezierPath{
     [self.view layoutIfNeeded];
-//    NSLog(@"%@",NSStringFromCGRect(imageView.frame));
-//    NSLog(@"%@",NSStringFromCGRect(newTextView.frame));
     CGRect imageRect = [newTextView convertRect:imageView.frame fromView:self.view];
-//    NSLog(@"%@",NSStringFromCGRect(imageRect));
     UIBezierPath *newPath = [UIBezierPath bezierPathWithRect:imageRect];
     return newPath;
+    //贝塞尔曲线
+}
+
+- (void)preferredContentSizeChanged:(NSNotification *)notification{
+    newTextView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
 }
 
 @end

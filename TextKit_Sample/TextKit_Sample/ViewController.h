@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSTextContainer *textContainer;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 - (void)markWord:(NSString *)word inTextStorage:(NSTextStorage *)textStorage;
 

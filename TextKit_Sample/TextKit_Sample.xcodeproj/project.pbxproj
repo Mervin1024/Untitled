@@ -15,6 +15,7 @@
 		EE5B6CBF1C16C89900104960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5B6CBD1C16C89900104960 /* LaunchScreen.storyboard */; };
 		EE5B6CCA1C16C89900104960 /* TextKit_SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5B6CC91C16C89900104960 /* TextKit_SampleTests.m */; };
 		EE5B6CD51C16C89900104960 /* TextKit_SampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5B6CD41C16C89900104960 /* TextKit_SampleUITests.m */; };
+		EE5B6CE31C16DA3B00104960 /* akalin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE5B6CE21C16DA3B00104960 /* akalin.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		EE5B6CD01C16C89900104960 /* TextKit_SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextKit_SampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5B6CD41C16C89900104960 /* TextKit_SampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextKit_SampleUITests.m; sourceTree = "<group>"; };
 		EE5B6CD61C16C89900104960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE5B6CE21C16DA3B00104960 /* akalin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = akalin.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		EE5B6CAF1C16C89900104960 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EE5B6CE21C16DA3B00104960 /* akalin.jpg */,
 				EE5B6CB01C16C89900104960 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE5B6CBF1C16C89900104960 /* LaunchScreen.storyboard in Resources */,
+				EE5B6CE31C16DA3B00104960 /* akalin.jpg in Resources */,
 				EE5B6CBC1C16C89900104960 /* Assets.xcassets in Resources */,
 				EE5B6CBA1C16C89900104960 /* Main.storyboard in Resources */,
 			);

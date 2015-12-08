@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,6 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="akalin.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="V1h-vE-dN9">
+                                <rect key="frame" x="260" y="50" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="NLk-bQ-yfg"/>
+                                    <constraint firstAttribute="height" constant="80" id="gql-Ty-PBa"/>
+                                </constraints>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WN9-F8-5ph">
                                 <rect key="frame" x="20" y="20" width="560" height="580"/>
                                 <mutableString key="text">Lorem ipsum dolor sit er elit 我 lamet,I I I I consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.上述代码我曹操曹操</mutableString>
@@ -24,13 +32,22 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V1h-vE-dN9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YJk-vS-sOd"/>
+                            <constraint firstItem="V1h-vE-dN9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.3" id="rGs-Ly-Mmj"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="V1h-vE-dN9" id="JIN-n0-I06"/>
                         <outlet property="textView" destination="WN9-F8-5ph" id="IQQ-j1-UfO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="432" y="308"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="akalin.jpg" width="500" height="500"/>
+    </resources>
 </document>

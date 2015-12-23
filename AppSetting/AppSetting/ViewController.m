@@ -43,7 +43,7 @@
     self.username.text = [NSString stringWithFormat:@"    用户名         %@",[defaults stringForKey:@"name_preference"]];
     self.password.text = [NSString stringWithFormat:@"    密码             %@",[defaults stringForKey:@"password_preference"]];
     
-    if ([defaults boolForKey:@"enable_preference"]) {
+    if ([defaults boolForKey:@"enabled_preference"]) {
         self.clearCache.text = @"    每月是否清除缓存       YES";
     }else{
         self.clearCache.text = @"    每月是否清除缓存       NO";

@@ -79,7 +79,7 @@
     CGRect imageRect = [newTextView convertRect:imageView.frame fromView:self.view];
     UIBezierPath *newPath = [UIBezierPath bezierPathWithRect:imageRect];
     return newPath;
-    //贝塞尔曲线1111111111
+    //贝塞尔曲线
 }
 
 - (void)preferredContentSizeChanged:(NSNotification *)notification{

@@ -15,7 +15,7 @@
 		EE5B6CBF1C16C89900104960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5B6CBD1C16C89900104960 /* LaunchScreen.storyboard */; };
 		EE5B6CCA1C16C89900104960 /* TextKit_SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5B6CC91C16C89900104960 /* TextKit_SampleTests.m */; };
 		EE5B6CD51C16C89900104960 /* TextKit_SampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5B6CD41C16C89900104960 /* TextKit_SampleUITests.m */; };
-		EE5B6CE31C16DA3B00104960 /* akalin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE5B6CE21C16DA3B00104960 /* akalin.jpg */; settings = {ASSET_TAGS = (); }; };
+		EE5B6CE31C16DA3B00104960 /* akalin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EE5B6CE21C16DA3B00104960 /* akalin.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -502,6 +502,7 @@
 				EE5B6CDB1C16C89900104960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE5B6CDC1C16C89900104960 /* Build configuration list for PBXNativeTarget "TextKit_SampleTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +511,7 @@
 				EE5B6CDE1C16C89900104960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE5B6CDF1C16C89900104960 /* Build configuration list for PBXNativeTarget "TextKit_SampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +520,7 @@
 				EE5B6CE11C16C89900104960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

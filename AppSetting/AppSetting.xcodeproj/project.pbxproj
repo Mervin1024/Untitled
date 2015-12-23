@@ -53,6 +53,8 @@
 		D847119D1C2A705F0062B325 /* AppSettingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppSettingUITests.m; sourceTree = "<group>"; };
 		D847119F1C2A705F0062B325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D84711AB1C2A706F0062B325 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		D84711AD1C2A8BDC0062B325 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		D84711AE1C2A8BDC0062B325 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +318,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D84711821C2A705F0062B325 /* Base */,
+				D84711AD1C2A8BDC0062B325 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D84711871C2A705F0062B325 /* Base */,
+				D84711AE1C2A8BDC0062B325 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

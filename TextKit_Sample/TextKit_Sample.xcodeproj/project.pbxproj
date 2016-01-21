@@ -506,6 +506,7 @@
 				EE5B6CDB1C16C89900104960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE5B6CDC1C16C89900104960 /* Build configuration list for PBXNativeTarget "TextKit_SampleTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +515,7 @@
 				EE5B6CDE1C16C89900104960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE5B6CDF1C16C89900104960 /* Build configuration list for PBXNativeTarget "TextKit_SampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +524,7 @@
 				EE5B6CE11C16C89900104960 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

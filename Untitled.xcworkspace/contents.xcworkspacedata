@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CellSeparator/CellSeparator.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TextKit_Sample/TextKit_Sample.xcodeproj">
    </FileRef>
    <FileRef
